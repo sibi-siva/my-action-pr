@@ -1,0 +1,22 @@
+{
+  "name": "my-action-pr",
+  "version": "1.0.0",
+  "description": "Add a new comment on every Pull Request created saying “Thank you!” - in GitHub actions",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sibi-siva/my-action-pr.git"
+  },
+  "author": "Sibi Sivasubramanian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sibi-siva/my-action-pr/issues"
+  },
+  "homepage": "https://github.com/sibi-siva/my-action-pr#readme",
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1"
+  }
+}

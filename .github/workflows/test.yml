@@ -1,0 +1,19 @@
+name: Test
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+
+# Creating a new Actions workflow called Test
+# Triggering it any time a new Pull Request is opened
+# Creating a new job called test
+# Telling it to run on the latest version of ubuntu
+# Checking out the code of our project
+# Use the code inside of that project as a step in our job
