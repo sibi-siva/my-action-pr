@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./
-
+        with:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 # Creating a new Actions workflow called Test
 # Triggering it any time a new Pull Request is opened
 # Creating a new job called test
